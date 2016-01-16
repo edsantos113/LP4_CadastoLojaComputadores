@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+   xmlns="http://java.sun.com/xml/ns/javaee" 
+   xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"    
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee  
+   http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" 
+   version="2.5">
+  
+<display-name>controle_vendas</display-name>
+
+<welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+<servlet>
+	<servlet-name>CadastrarProduto</servlet-name>
+	<servlet-class>servlet.CadastrarProduto</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>CadastrarProduto</servlet-name>
+	<url-pattern>/produto/cadastra</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ExcluirProduto</servlet-name>
+	<servlet-class>servlet.ExcluirProduto</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>ExcluirProduto</servlet-name>
+	<url-pattern>/produto/exclui</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>EditarProduto</servlet-name>
+	<servlet-class>servlet.EditarProduto</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>EditarProduto</servlet-name>
+	<url-pattern>/produto/edita</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>CadastrarVendedor</servlet-name>
+	<servlet-class>servlet.CadastrarVendedor</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>CadastrarVendedor</servlet-name>
+	<url-pattern>/vendedor/cadastra</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>ExcluirVendedor</servlet-name>
+	<servlet-class>servlet.ExcluirVendedor</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>ExcluirVendedor</servlet-name>
+	<url-pattern>/vendedor/exclui</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>EditarVendedor</servlet-name>
+	<servlet-class>servlet.EditarVendedor</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>EditarVendedor</servlet-name>
+	<url-pattern>/vendedor/edita</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+	<servlet-name>CadastrarVenda</servlet-name>
+	<servlet-class>servlet.CadastrarVenda</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>CadastrarVenda</servlet-name>
+	<url-pattern>/venda/cadastraVenda</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>PesquisarVendaPorCodigo</servlet-name>
+	<servlet-class>servlet.PesquisarVendaPorCodigo</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>PesquisarVendaPorCodigo</servlet-name>
+	<url-pattern>/venda/pequisaVendaPorCodigo</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>PesquisarVendaPorVendedor</servlet-name>
+	<servlet-class>servlet.PesquisarVendaPorVendedor</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>PesquisarVendaPorVendedor</servlet-name>
+	<url-pattern>/venda/pequisaVendaPorVendedor</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>PesquisarVendaPorData</servlet-name>
+	<servlet-class>servlet.PesquisarVendaPorData</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<servlet-name>PesquisarVendaPorData</servlet-name>
+	<url-pattern>/venda/pesquisaVendaPorData</url-pattern>
+</servlet-mapping>
+
+
+</web-app>
